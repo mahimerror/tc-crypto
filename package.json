@@ -1,0 +1,26 @@
+{
+  "name": "tc-crypto",
+  "version": "1.0.0",
+  "description": "It's a npm package to encrypt or decrypt data using many crypto-graphy algorithms.",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahimerror/tc-crypto.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "MH Mahim",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mahimerror/tc-crypto/issues"
+  },
+  "homepage": "https://github.com/mahimerror/tc-crypto#readme",
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}
