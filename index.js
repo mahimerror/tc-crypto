@@ -29,4 +29,4 @@ const decrypt = (mode, cipherText="", key="") => {
     return plaintext;
 }
 
-export default encrypt;
+export {encrypt, decrypt};
