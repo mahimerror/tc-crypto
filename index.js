@@ -11,22 +11,18 @@ import Crypto from "crypto-js";
 // // console.log(originalText);
 
 
-const encrypt = (mode, plainText="", key="") => {
-    if(mode==="aes"){
-        var ciphertext = Crypto.AES.encrypt('my message', 'secret key 123').toString();
+const covert = (mode, cryptoMode, plainText="", key="") => {
+    let output="";
+    if(cryptoMode==="aes"){
+        if(mode==="enc")
+            output = Crypto.AES.encrypt('my message', 'secret key 123').toString();
+        else
+            output = CryptoJS.AES.decrypt(cipherText, key).toString();
+
     }
 
 
-    return ciphertext;
+    return output;
 }
 
-const decrypt = (mode, cipherText="", key="") => {
-    if(mode==="aes"){
-        var plaintext = CryptoJS.AES.decrypt(cipherText, key).toString();
-    }
-
-
-    return plaintext;
-}
-
-export {encrypt, decrypt};
+export default output;
