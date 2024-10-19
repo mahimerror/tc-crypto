@@ -20,4 +20,13 @@ const encrypt = (mode, plainText="", key="") => {
     return ciphertext;
 }
 
+const decrypt = (mode, cipherText="", key="") => {
+    if(mode==="aes"){
+        var plaintext = CryptoJS.AES.decrypt(cipherText, key).toString();
+    }
+
+
+    return plaintext;
+}
+
 export default encrypt;
